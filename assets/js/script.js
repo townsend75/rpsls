@@ -10,25 +10,32 @@ const images = ["Rock.png", "Paper.png", "Scissors.png", "Lizard.png","Spock.png
 
 
 for (let button of buttons) {
-    button.addEventListener (click, function() {
-        let playerChoice = this.gameAttribute("data-choice");
+    button.addEventListener ("click", function(event) {
+        console.log("this", this);
+        let playerChoice = parseInt(this.dataset.choice);
+        console.log("playerChoice", playerChoice);
         playGame(playerChoice);
     });
 
 }
 
 function playGame (playerChoice) {
-playerImage.src = `assets/images/${choices(playerChoice)}.png`;
+playerImage.src = `assets/images/${choices[playerChoice]}.png`;
 playerImage.alt = choices[playerChoice];
 
 let computerChoice = Math.floor(Math.random () * 5);
-
-computerImage.src = `assets/images/${choices(computerChoice)}.png`;
+console.log("computerChoice", computerChoice);
+computerImage.src = `assets/images/${choices[computerChoice]}.png`;
 computerImage.alt = choices[computerChoice];
 
-let result = checkWinner ( choices[computerChoice], choices[playerChoice]);
+let result = checkWinner(choices[computerChoice], choices[playerChoice]);
 
 updateScores(result);
+}
+
+function checkWinner(player, computer) {
+
+
 }
 
 /*function rpsls(player) {
@@ -37,7 +44,7 @@ updateScores(result);
     if (outcomes[player][computer]==0){alert("Tie");}
     if (outcomes[player][computer]==1){alert("Player Wins");}
     if (outcomes[player][computer]==2){alert("Computer Wins");}
-    */
+    
 
-}
+}*/
 
