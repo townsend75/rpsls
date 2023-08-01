@@ -32,6 +32,9 @@
  | Spock button  |Spock picture on player side |Press spock button | Works as expected |
  | Results message | Result of hand should be displayed | Play game | Works as expected |
  Player & Computer Scores | Scores should tally with results | Play game as normal | Scores are updated correctly |
+ |Game over alerts | Alert when either computer or player reaches 10 points | play game until one party achieves 10 points | Alert and reset is activated|
+
+
 
 
 

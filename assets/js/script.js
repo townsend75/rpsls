@@ -75,44 +75,51 @@ function checkWinner(choice1, choice2) {
        
         computerCounter();
         messages.textContent = "Computer wins!";
+        isGameOver();
       
     } else if (choice1 == "paper" && choice2 == "rock" || choice2 == "spock") {
         
         playerCounter();
         messages.textContent  = "You win!";
+        isGameOver();
        
     }
     else if (choice1 == "scissors" && choice2 == "rock" || choice2 == "spock") {
         
         computerCounter();
         messages.textContent = "Computer wins!";
+        isGameOver();
       
     } else if (choice1 == "scissors" && choice2 == "paper" || choice2 == "lizard") {
        
         playerCounter();
         messages.textContent  = "You win!";
+        isGameOver();
        
     }
     else if (choice1 == "lizard" && choice2 == "scissors" || choice2 == "rock") {
       
         computerCounter();
         messages.textContent = "Computer wins!";
+        isGameOver();
        
     } else if (choice1 == "lizard" && choice2 == "paper" || choice2 == "spock") {
        
         playerCounter();
         messages.textContent  = "You win!";
-        
+        isGameOver();
     }
     else if (choice1 == "spock" && choice2 == "lizard" || choice2 == "paper") {
        
         computerCounter();
         messages.textContent = "Computer wins!";
+        isGameOver();
       
     } else if (choice1 == "spock" && choice2 == "scissors" || choice2 == "rock") {
        
         playerCounter();
         messages.textContent  = "You win!";
+        isGameOver();
       
     }
 }

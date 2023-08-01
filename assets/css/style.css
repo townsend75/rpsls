@@ -16,6 +16,7 @@ body {
 .header {
     text-align: center;
     font-size: x-large;
+    height: 25%;
    
 }
 
@@ -41,8 +42,10 @@ footer {
     margin-right: auto;
     margin-top: 1%;
     
+    
 
 }
+
 
 .control {
     display:inline-block;
@@ -51,8 +54,10 @@ footer {
     margin: 2px;
 }
 
-#message {
+#messages {
     height: 20px;
+    margin-top: 20px;
+    font-size: x-large;
     
 }
 
@@ -60,21 +65,29 @@ footer {
     background-color: rgb(75, 205, 232);
     width: 45%;
     float: left;
-    
+    margin-top: 100px;
+   
+  
+  
 }
 
 .computer {
     background-color: rgb(232, 230, 71);
     float: right;
     width: 45%;
+    margin-top: 100px;
+    
     
 }
 #player-image {
     width: 45%;
-    
+    background-size:cover;
+    height:auto;
 
 }
 
 #computer-image {
     width: 45%;
+    background-size:cover ;
+    height:auto;
 }
