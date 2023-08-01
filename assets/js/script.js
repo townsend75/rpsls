@@ -4,16 +4,14 @@ const computerScore = document.getElementById("computer-score");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const messages = document.getElementById("messages");
-const choices = [ "Rock", "Paper", "Scissors", "Lizard", "Spock" ];
-const outcomes = [[0,2,1,1,2],[1,0,2,2,1],[2,1,0,1,2],[2,1,2,0,1],[1,2,1,2,0]];
-const images = ["Rock.png", "Paper.png", "Scissors.png", "Lizard.png","Spock.png"]
+const choices = [ "rock", "paper", "scissors", "lizard", "spock" ];
+const outcomes = choices[[0,2,1,1,2],[1,0,2,2,1],[2,1,0,1,2],[2,1,2,0,1],[1,2,1,2,0]];
+const images = ["rock.png", "paper.png", "scissors.png", "lizard.png","spock.png"]
 
 
 for (let button of buttons) {
     button.addEventListener ("click", function(event) {
-        console.log("this", this);
         let playerChoice = parseInt(this.dataset.choice);
-        console.log("playerChoice", playerChoice);
         playGame(playerChoice);
     });
 
@@ -24,27 +22,36 @@ playerImage.src = `assets/images/${choices[playerChoice]}.png`;
 playerImage.alt = choices[playerChoice];
 
 let computerChoice = Math.floor(Math.random () * 5);
-console.log("computerChoice", computerChoice);
 computerImage.src = `assets/images/${choices[computerChoice]}.png`;
 computerImage.alt = choices[computerChoice];
 
-let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+let result = checkWinner(choices[playerChoice], choices[computerChoice]);
 
-updateScores(result);
+/*updateScores(result);*/
 }
 
-function checkWinner(player, computer) {
-
-
+function playerCounter() {
+    let oldScore = parseInt(document.getElementById("player-score").innerText);
+    document.getElementById("player-score").innerText = ++oldScore;
 }
 
-/*function rpsls(player) {
-    var computer=Math.floor(Math.random()*5);
+function computerCounter() {
+    let oldScore = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("computer-score").innerText = ++oldScore;
+}
 
-    if (outcomes[player][computer]==0){alert("Tie");}
-    if (outcomes[player][computer]==1){alert("Player Wins");}
-    if (outcomes[player][computer]==2){alert("Computer Wins");}
+function checkWinner(choice1, choice2) {
     
-
-}*/
-
+       if (choice1 === choice2) {
+        alert ("It's a tie!")    
+       }
+                       if (choice1 === "rock" && choice2 == "paper" || choice2 == "spock") {
+                        alert("You lose");
+                        computerCounter();
+                        
+                          }
+                         else if (choice1 === "rock" && choice2 == "scissors" || choice2 == "lizard") {
+                            alert ("You win");
+                       playerCounter();
+                 }
+                }
