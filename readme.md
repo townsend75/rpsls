@@ -6,7 +6,6 @@
  ## Table of Contents
 
  ### Features
- ### UX/ UI
  ### Testing
  ### Deployment
  ### Sources
@@ -18,6 +17,21 @@
  Since the main aim of this project was to implement javascript, the basic design of the site is very simplistic. THe header and footer have identical background colours which give a symetrical appearance without making the text difficult to read. 
 
  In the game area, there are five buttons which are clearly marked for the pkayer to make their choice. Each choice reveals an image of the player's choice and the corresponding image of the computer's (random) choice. A message is shown displaying the result  and the scores for player and computer are tallied within the game areas. 
+
+ The footer contains the rules of the game for easy reference. 
+
+
+ ### Testing
+
+ | Feature      | Expect    | Action       | Result  |
+ | :---         |   :---:   |    :---:     |     --: |
+ | Rock button  | Rock picture on player side |Press rock button | Works as expected |
+ | Paper button  | Paper picture on player side |Press paper button | Works as expected |
+ | Scissors button  | Scissors picture on player side |Press scissors button | Works as expected |
+ | Lizard button  |  Lizard picture on player side |Press lizard button | Works as expected |
+ | Spock button  |Spock picture on player side |Press spock button | Works as expected |
+ | Results message | Result of hand should be displayed | Play game | Works as expected |
+ Player & Computer Scores | Scores should tally with results | Play game as normal | Scores are updated correctly |
 
 
 

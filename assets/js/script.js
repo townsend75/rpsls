@@ -28,14 +28,18 @@ function playGame(playerChoice) {
 
    
 }
-/*function isGameOver() {
-    if (playerScore === 10) {
+function isGameOver() {
+    if (playerScore.textContent == 10) {
         alert("Congrats, you win!");
-    } else if (computerScore === 10) {
-        alert("Bad luck, you lose!");
+        window.location.reload();
+       
+    } else if (computerScore.textContent == 10) {
+        alert("Bad luck, you lose!")
+        window.location.reload();
+       
     } else {}
     
-}*/
+}
 
 function playerCounter() {
     let oldScore = parseInt(document.getElementById("player-score").innerText);
@@ -51,17 +55,20 @@ function checkWinner(choice1, choice2) {
 
     if (choice1 === choice2) {
          messages.textContent = "It's a tie";
+         isGameOver();
     }
     else if (choice1 == "rock" && choice2 == "paper" || choice2 == "spock") {
         
         computerCounter();
         messages.textContent = "Computer wins!";
+        isGameOver();
 
     }
     else if (choice1 == "rock" && choice2 == "scissors" || choice2 == "lizard") {
         
         playerCounter();
         messages.textContent  = "You win!";
+        isGameOver();
        
     }
    else if (choice1 == "paper" && choice2 == "scissors" || choice2 == "lizard") {
