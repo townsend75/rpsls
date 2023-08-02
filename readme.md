@@ -22,7 +22,7 @@
 
  ![Screenshot of game buttons](assets/images/buttons%20screenshot.png)
 
- In the game area, there are five buttons which are clearly marked for the player to make their choice. Each choice reveals an image of the player's choice and the corresponding image of the computer's (random) choice. A message is shown displaying the result and the scores for player and computer are tallied within the game areas. ONce one of the contestants reaches 10 points, the game is over and is automatically reset for the next game. 
+ In the game area, there are five buttons which are clearly marked for the player to make their choice. Each choice reveals an image of the player's choice and the corresponding image of the computer's (random) choice. A message is shown displaying the result and the scores for player and computer are tallied within the game areas. Once one of the contestants reaches 10 points, the game is over and is automatically reset for the next game. Additionally, there are sperate counters keeping track of the number of games won by each player. 
 
  The footer contains the rules of the game for easy reference. 
 
@@ -43,6 +43,7 @@ The simplicity of the design makes it very clear what the user has to do. The ga
  | Results message | Result of hand should be displayed | Play game | Works as expected |
  Player & Computer Scores | Scores should tally with results | Play game as normal | Scores are updated correctly |
  |Game over alerts | Alert when either computer or player reaches 10 points | play game until one party achieves 10 points | Alert and reset is activated|
+ |Player & Computer Tally | Games won should be updated after a game has finished | Play game through until one player wins | Games won feature works as expected |
 
 #### Bugs and Problems
 
