@@ -5,12 +5,12 @@ html {
 
 body {
     font-family: 'DM Sans', sans-serif;
-   margin: 0;
+    margin: 0;
 }
 
 header {
     background-color: lemonchiffon;
-   }
+}
 
 
 
@@ -18,7 +18,7 @@ header {
     text-align: center;
     font-size: x-large;
     height: 25%;
-   
+
 }
 
 
@@ -41,14 +41,14 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
-    
-    
+
+
 
 }
 
 
 .control {
-    display:inline-block;
+    display: inline-block;
     width: 80px;
     height: 75px;
     margin: 2px;
@@ -58,7 +58,7 @@ footer {
     height: 20px;
     margin-top: 20px;
     font-size: x-large;
-    
+
 }
 
 .player {
@@ -66,13 +66,13 @@ footer {
     width: 45%;
     float: left;
     margin-top: 100px;
-   
-  
-  
+
+
+
 }
 
-#holder { 
-    
+#holder {
+
     display: flex;
     justify-content: space-around;
 }
@@ -82,19 +82,19 @@ footer {
     float: right;
     width: 45%;
     margin-top: 100px;
-    
-    
+
+
 }
+
 #player-image {
     width: 45%;
-  
-  
+
+
 
 }
 
 #computer-image {
     width: 45%;
-  
-    
-}
 
+
+}
