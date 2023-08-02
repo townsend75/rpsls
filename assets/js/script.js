@@ -5,7 +5,7 @@ const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const messages = document.getElementById("messages");
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
-const images = ["rock.png", "paper.png", "scissors.png", "lizard.png", "spock.png"]
+
 
 
 for (let button of buttons) {
@@ -24,7 +24,7 @@ function playGame(playerChoice) {
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
-    let result = checkWinner(choices[playerChoice], choices[computerChoice]);
+     checkWinner(choices[playerChoice], choices[computerChoice]);
 
    
 }
